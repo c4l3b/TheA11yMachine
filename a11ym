@@ -94,6 +94,10 @@ program
         'Exclude URL to test by using a regular expression without delimiters (e.g. \'news|contact\').'
     )
     .option(
+        '-q, --strip-querystring',
+        'Strip querystring parameters from URLs.'
+    )
+    .option(
         '-w, --workers <workers>',
         'Number of workers, i.e. number of URLs computed in parallel.',
         /^\d+$/i
